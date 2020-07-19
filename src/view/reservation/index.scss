@@ -1,0 +1,135 @@
+.ant-steps {
+  .ant-steps-item {
+    margin-right: 0 !important;
+
+    &::before {
+      height: 7px;
+      left: 0 !important;
+      background-color: transparent !important;
+    }
+    &::after {
+      display: none;
+      width: 0;
+    }
+
+    &.ant-steps-item-process,
+    &.ant-steps-item-finish {
+      &::before {
+        left: 0 !important;
+        width: 100% !important;
+        background-color: #2f72e8 !important;
+      }
+      // .ant-steps-item-container {
+      //   .ant-steps-item-icon {
+      //     background-color: #ffffff;
+      //     opacity: 1;
+      //     &::after {
+      //       transition-duration: 600ms;
+      //       transform: scale(1);
+      //       opacity: 1;
+      //     }
+      //   }
+      // }
+    }
+    &.ant-steps-item-process {
+      .ant-steps-item-container {
+        .ant-steps-item-title {
+          color: #2f72e8;
+        }
+        .ant-steps-item-icon {
+          background-color: #ffffff;
+          opacity: 1;
+          &::after {
+            transition-duration: 600ms;
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &.ant-steps-item-finish {
+      .ant-steps-item-container {
+        .ant-steps-item-title {
+          color: #dcd9d9;
+        }
+        .ant-steps-item-icon {
+          display: none;
+        }
+      }
+    }
+    &.ant-steps-item-wait {
+      .ant-steps-item-title {
+        color: #dcd9d9;
+      }
+    }
+    &:nth-child(1) {
+      flex: 1 1 0% !important;
+    }
+    &:nth-child(2) {
+      flex: 1 1 13% !important;
+    }
+    &:nth-child(3) {
+      flex: 1 1 20% !important;
+    }
+    &:nth-child(4) {
+      flex: 1 1 5% !important;
+    }
+    &:nth-child(5) {
+      flex: 1 1 0% !important;
+    }
+    .ant-steps-item-title {
+      font-size: 12px;
+      color: #dcd9d9;
+      font-family: "Campton Bold";
+    }
+    .ant-steps-item-container {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      .ant-steps-item-content {
+        margin-top: 0px;
+      }
+      .ant-steps-item-icon {
+        opacity: 0;
+        position: absolute;
+        margin-right: 0;
+        right: -10px;
+        z-index: 3;
+        top: 30px;
+        width: 20px;
+        height: 20px;
+        &::after {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          display: table;
+          width: 8px;
+          height: 8px;
+          background-color: #44d774;
+          border-top: 0;
+          border-left: 0;
+          border-radius: 8px;
+          opacity: 0;
+          transform: scale(0);
+          content: " ";
+        }
+        .ant-steps-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .ant-steps-item-active {
+    .ant-steps-item-container {
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}

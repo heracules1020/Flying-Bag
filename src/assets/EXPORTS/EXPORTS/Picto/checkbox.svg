@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Atoms/checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms/checkbox" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#DCD9D9" x="0" y="0" width="18" height="18" rx="3"></rect>
+        <g id="right" transform="translate(3.000000, 4.000000)" fill="#06026C">
+            <polygon id="Path" points="10.4130702 0 12 1.76127086 4.57655606 10 0 4.920931 1.58692978 3.15966014 4.57655606 6.47751363"></polygon>
+        </g>
+    </g>
+</svg>

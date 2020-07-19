@@ -1,0 +1,25 @@
+.carousel-container {
+  ul {
+    li {
+      text-align: center;
+      button {
+        width: 50px;
+        cursor: pointer;
+        background-color: #44d774;
+      }
+    }
+  }
+  .react-multiple-carousel__arrow--left {
+    left: -15px;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: -15px;
+  }
+  .react-multiple-carousel__arrow {
+    top: 25%;
+    background-color: transparent;
+    &::before {
+      color: #828282;
+    }
+  }
+}

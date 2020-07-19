@@ -1,0 +1,37 @@
+.modal .fa-times-circle-o {
+  font-size: 28px;
+  color: #2f72e8;
+  cursor: pointer;
+}
+.modal-dialog {
+  top: 30%;
+  transform: translateY(-50%) !important;
+}
+.modal-dialog.modal-md {
+  max-width: 600px;
+}
+.modal-dialog.modal-lg {
+  max-width: 720px;
+  transform: translateY(-20%) !important;
+}
+.modal-dialog.modal-md .modal-content .modal-body {
+  padding: 25px 90px 85px;
+}
+.modal-content {
+  border: 1px solid #9bafd2 !important;
+  border-radius: 3px !important;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-backdrop {
+  background-color: #ffffff !important;
+}
+.modal-backdrop.show {
+  opacity: 0.9 !important;
+}
+@media (max-width: 425px) {
+  .modal-dialog.modal-md .modal-content .modal-body {
+    padding: 10px 10px;
+  }
+}

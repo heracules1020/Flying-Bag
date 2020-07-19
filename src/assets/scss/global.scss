@@ -1,0 +1,415 @@
+@import "pretty-checkbox/src/pretty-checkbox.scss";
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro Demi";
+  font-style: normal;
+  font-weight: 300;
+  src: local("ITC Avant Garde Gothic Pro Demi"),
+    url("../fonts/ITCAvantGardePro-Demi.otf") format("opentype"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro Book";
+  font-style: normal;
+  font-weight: 300;
+  src: local("ITC Avant Garde Gothic Pro Book"),
+    url("../fonts/ITC Avant Garde Gothic LT Book Regular.otf")
+      format("opentype"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro Bold";
+  font-style: normal;
+  font-weight: 300;
+  src: local("ITC Avant Garde Gothic Pro Bold"),
+    url("../fonts/ITC Avant Garde Gothic LT Bold.otf") format("opentype"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Campton Bold";
+  font-style: normal;
+  src: local("Campton Bold"),
+    url("../fonts/Campton-SemiBold.otf") format("opentype"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Campton Regular";
+  font-style: normal;
+  src: local("Campton Regular"),
+    url("../fonts/Campton-Light.otf") format("opentype"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Campton Medium";
+  font-style: normal;
+  src: local("Campton Medium"),
+    url("../fonts/Campton-Medium.otf") format("opentype"); /* Modern Browsers */
+}
+
+.container-md {
+  max-width: 1024px !important;
+}
+
+.green-light {
+  color: #44d774;
+}
+
+.th-color {
+  color: #6987bb;
+}
+.blue-light {
+  color: #2f72e8 !important;
+}
+
+.black-blue {
+  color: #032156 !important;
+}
+
+.red-light {
+  color: #f26052;
+}
+
+.blue-deep {
+  color: #05378e !important;
+}
+
+.grey-deep {
+  color: #9bafd2 !important;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px !important;
+}
+.font-18 {
+  font-size: 18px !important;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.campton-bold {
+  font-family: "Campton Bold" !important;
+}
+
+.campton-regular {
+  font-family: "Campton Regular" !important;
+}
+
+.campton-medium {
+  font-family: "Campton Medium" !important;
+}
+
+.itc-book {
+  font-family: "ITC Avant Garde Gothic Pro Book" !important;
+}
+
+.itc-demi {
+  font-family: "ITC Avant Garde Gothic Pro Demi" !important;
+}
+
+.itc-bold {
+  font-family: "ITC Avant Garde Gothic Pro Bold" !important;
+}
+
+.text-thick {
+  -webkit-text-stroke: thick;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #d8e0ed !important;
+
+  &.blue-border {
+    border-top: 1px solid rgba(5, 55, 142, 0.6) !important;
+  }
+  &.green-border {
+    border-top: 1px solid #44d774 !important;
+  }
+}
+
+.small-border-radius {
+  border-radius: 3px !important;
+}
+.large-border-radius {
+  border-radius: 18px !important;
+}
+
+.sketch-picker {
+  width: 250px !important;
+}
+i.fa-angle-right {
+  cursor: pointer;
+  font-size: 28px;
+  color: #9bafd2;
+  transition-duration: 500ms;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  &.active {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+button {
+  border: none !important;
+  font-family: "ITC Avant Garde Gothic Pro Demi" !important;
+  font-size: 12px !important;
+  &.active {
+    box-shadow: none !important;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  &.react-datepicker__navigation {
+    border: 0.45rem solid transparent !important;
+    &.react-datepicker__navigation--previous {
+      border-right-color: #b3b3b3 !important;
+    }
+    &.react-datepicker__navigation--next {
+      border-left-color: #b3b3b3 !important;
+    }
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+  &.bg-white {
+    background-color: #ffffff;
+    border: none !important;
+  }
+  &.bg-blue-light {
+    background-color: #2f72e8;
+    color: #ffffff !important;
+  }
+  &.bg-red-light {
+    background-color: #f26052 !important;
+    color: #ffffff !important;
+  }
+  &.bg-green-light {
+    background-color: #44d774;
+    color: #ffffff !important;
+  }
+  a {
+    font-size: 12px;
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+table {
+  th {
+    border-top: none !important;
+    border-bottom: 7px solid #f6f6f6 !important;
+  }
+}
+input,
+textarea {
+  border: 1px solid #d1daea !important;
+  font-family: "ITC Avant Garde Gothic Pro Demi" !important;
+  font-size: 15px;
+  color: #05378e !important;
+
+  line-height: 1.2;
+
+  &::placeholder {
+    color: #dcd9d9 !important;
+  }
+}
+//  {
+//   &::placeholder {
+//     color: #dcd9d9 !important;
+//   }
+// }
+.green-bordered {
+  border-color: #44d774 !important;
+  color: #44d774 !important;
+  &.opacity-holder {
+    &::placeholder {
+      color: #dcd9d9 !important;
+    }
+  }
+  &::placeholder {
+    color: #44d774 !important;
+  }
+  option {
+    color: #44d774 !important;
+  }
+}
+.pretty {
+  .state {
+    .icon {
+      top: -1px !important;
+      color: #44d774 !important;
+    }
+    label {
+      font-size: 20px;
+      &::before {
+        border-color: #2f72e8;
+        width: 17px;
+        height: 17px;
+        top: 0;
+      }
+      &::after {
+        width: 17px;
+        height: 17px;
+        top: 0;
+      }
+    }
+  }
+}
+
+.search-title {
+  span:first-child {
+    font-family: "Campton Bold";
+  }
+  span:last-child {
+    font-family: "Campton Regular";
+  }
+}
+
+.service-title {
+  font-size: 18px;
+  line-height: 1;
+  font-family: "Campton Bold";
+  color: #05378e;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #6987bb;
+  font-family: "ITC Avant Garde Gothic Pro Book";
+  font-weight: 300;
+}
+
+.navbar-collapse {
+  z-index: 1;
+  width: 50%;
+  background-color: white;
+  margin-left: auto;
+
+  .navbar__link {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "ITC Avant Garde Gothic Pro Book";
+    &:hover,
+    &:active {
+      color: #44d774 !important;
+      text-decoration: none;
+    }
+    &.sidebar_nav {
+      color: #9bafd2 !important;
+      font-size: 12px;
+    }
+  }
+
+  .navbar__link--active {
+    color: #44d774 !important;
+    &.sidebar_nav {
+      color: #2f72e8 !important;
+      font-size: 16px;
+    }
+  }
+}
+
+.has-icon {
+  .form-control-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 34px;
+    right: 12px;
+    z-index: 2;
+    display: block;
+    font-size: 20px;
+    line-height: 2.375rem;
+    color: #2f72e8;
+  }
+}
+.date-custom-input {
+  font-size: 15px;
+  color: #44d774;
+  font-weight: bold;
+}
+.card {
+  &.green-border {
+    border-color: #44d774 !important;
+  }
+}
+// .footer {
+//   margin-top: 180px;
+// }
+.nav-tabs {
+  border-bottom: none !important;
+  .nav-item {
+    cursor: pointer;
+    .nav-link {
+      color: #d8e0ed;
+      border: none !important;
+      padding-left: 0 !important;
+      &:hover {
+        color: #2f72e8 !important;
+      }
+      &.active {
+        color: #2f72e8 !important;
+        border-bottom: 5px solid !important;
+      }
+    }
+  }
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #ddffff;
+  &.green-color {
+    background-color: #44d774;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #fdfcfc;
+    margin-top: 3px;
+    border-top: none;
+    box-shadow: rgba(47, 114, 232, 0.16) 0px 2px 5px 0px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .sidebar_navbar.position-fixed {
+    position: relative !important;
+    top: 0 !important;
+  }
+  @media (min-width: 426px) {
+    .auth-container {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .auth-container {
+    width: 66%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .auth-container {
+    width: 50%;
+  }
+}
